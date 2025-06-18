@@ -45,7 +45,7 @@ const VillagePage = () => {
     const checkAuth = async () => {
       try {
         await axios.get(`${baseUrl}/api/users/auth`, {
-          withCredentials: true,
+          withCredentials: true, // Important
         });
         fetchVillages();
       } catch (err) {
