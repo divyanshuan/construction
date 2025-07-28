@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { baseUrl } from "../utils/baseUrl";
+import { baseUrl } from "../../utils/baseUrl";
 import {
   PencilIcon,
   TrashIcon,
   PlusIcon,
   CameraIcon,
 } from "@heroicons/react/24/solid";
-import AddEditHouseModal from "../components/AddEditHouseModal";
-import UploadHouseFileModal from "../components/UploadHouseFileModal";
-import ConfirmDeleteModal from "../components/ConfirmDeleteModal";
+import AddEditHouseModal from "../../components/AddEditHouseModal";
+import UploadHouseFileModal from "../../components/UploadHouseFileModal";
+import ConfirmDeleteModal from "../../components/ConfirmDeleteModal";
 
 const HousePage = () => {
   const [houses, setHouses] = useState([]);

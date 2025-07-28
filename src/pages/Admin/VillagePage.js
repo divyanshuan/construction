@@ -6,11 +6,11 @@ import {
   CameraIcon,
 } from "@heroicons/react/24/solid";
 import axios from "axios";
-import { baseUrl } from "../utils/baseUrl";
-import Modal from "../components/Modal";
-import UploadVillageFileModal from "../components/UploadVillageFileModal";
-import EditVillageModal from "../components/EditVillageModal";
-import ConfirmDeleteModal from "../components/ConfirmDeleteModal";
+import { baseUrl } from "../../utils/baseUrl";
+import Modal from "../../components/Modal";
+import UploadVillageFileModal from "../../components/UploadVillageFileModal";
+import EditVillageModal from "../../components/EditVillageModal";
+import ConfirmDeleteModal from "../../components/ConfirmDeleteModal";
 
 const VillagePage = () => {
   const [villages, setVillages] = useState([]);

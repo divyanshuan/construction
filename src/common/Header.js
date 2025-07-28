@@ -19,7 +19,7 @@ export default function Header() {
               src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
               className="h-8 w-auto"
             /> */}
-            <h1>my company name</h1>
+            <h1 className="text-xl font-bold">Construction Practice</h1>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -33,15 +33,16 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Features
+          <a href="/" className="text-sm/6 font-semibold text-gray-900">
+            Home
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Marketplace
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <Link to="/village" className="text-sm/6 font-semibold text-gray-900">
+            Villages
+          </Link>
+
+          {/* <a href="#" className="text-sm/6 font-semibold text-gray-900">
             Company
-          </a>
+          </a> */}
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link to="/login" className="text-sm/6 font-semibold text-gray-900">

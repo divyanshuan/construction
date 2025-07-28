@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { baseUrl } from "../utils/baseUrl";
+import { baseUrl } from "../../utils/baseUrl";
 import { TrashIcon } from "@heroicons/react/24/solid";
-import ConfirmDeleteModal from "../components/ConfirmDeleteModal";
+import ConfirmDeleteModal from "../../components/ConfirmDeleteModal";
 
 const FilePage = () => {
   const [files, setFiles] = useState([]);
